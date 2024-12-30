@@ -1,0 +1,17 @@
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.GeneratedMSBuildEditorConfig.editorconfig
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.AssemblyInfoInputs.cache
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.AssemblyInfo.cs
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.csproj.CoreCompileInputs.cache
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.sourcelink.json
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\bin\x64\Debug\net8.0-windows\SharedPhotoAlbum.exe
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\bin\x64\Debug\net8.0-windows\SharedPhotoAlbum.deps.json
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\bin\x64\Debug\net8.0-windows\SharedPhotoAlbum.runtimeconfig.json
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\bin\x64\Debug\net8.0-windows\SharedPhotoAlbum.dll
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\bin\x64\Debug\net8.0-windows\SharedPhotoAlbum.pdb
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.dll
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\refint\SharedPhotoAlbum.dll
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.pdb
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.genruntimeconfig.cache
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\ref\SharedPhotoAlbum.dll
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.MainForm.resources
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\SharedPhotoAlbum\obj\x64\Debug\net8.0-windows\SharedPhotoAlbum.csproj.GenerateResource.cache

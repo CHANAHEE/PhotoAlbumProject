@@ -1,4 +1,4 @@
-﻿namespace SharedPhotoAlbum
+﻿namespace AlbumServer
 {
     partial class Form1
     {

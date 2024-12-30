@@ -1,0 +1,15 @@
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\bin\x64\Debug\net8.0-windows\AlbumServer.exe
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\bin\x64\Debug\net8.0-windows\AlbumServer.deps.json
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\bin\x64\Debug\net8.0-windows\AlbumServer.runtimeconfig.json
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\bin\x64\Debug\net8.0-windows\AlbumServer.dll
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\bin\x64\Debug\net8.0-windows\AlbumServer.pdb
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\AlbumServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\AlbumServer.AssemblyInfoInputs.cache
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\AlbumServer.AssemblyInfo.cs
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\AlbumServer.csproj.CoreCompileInputs.cache
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\AlbumServer.sourcelink.json
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\AlbumServer.dll
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\refint\AlbumServer.dll
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\AlbumServer.pdb
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\AlbumServer.genruntimeconfig.cache
+D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\obj\x64\Debug\net8.0-windows\ref\AlbumServer.dll

@@ -60,6 +60,7 @@
             treeView_Folder.Name = "treeView_Folder";
             treeView_Folder.Size = new Size(228, 665);
             treeView_Folder.TabIndex = 0;
+            treeView_Folder.AfterLabelEdit += treeView_Folder_AfterLabelEdit;
             treeView_Folder.MouseUp += treeView_Folder_MouseUp;
             // 
             // contextMenuStrip_FolderManaging

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharedPhotoAlbum")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce8d7ea6a85a1f072f2a036c0f2853b25cdadb29")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+936b9cc784b824061790f91276c03f3f2566da14")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharedPhotoAlbum")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharedPhotoAlbum")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

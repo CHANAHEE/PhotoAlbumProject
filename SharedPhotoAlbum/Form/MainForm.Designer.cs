@@ -34,6 +34,7 @@
             contextMenuStrip_FolderManaging = new ContextMenuStrip(components);
             toolStripMenuItem_AddFolder = new ToolStripMenuItem();
             toolStripMenuItem_DeleteFolder = new ToolStripMenuItem();
+            toolStripMenuItem_Rename = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.SuspendLayout();
@@ -65,23 +66,30 @@
             // 
             // contextMenuStrip_FolderManaging
             // 
-            contextMenuStrip_FolderManaging.Items.AddRange(new ToolStripItem[] { toolStripMenuItem_AddFolder, toolStripMenuItem_DeleteFolder });
+            contextMenuStrip_FolderManaging.Items.AddRange(new ToolStripItem[] { toolStripMenuItem_AddFolder, toolStripMenuItem_DeleteFolder, toolStripMenuItem_Rename });
             contextMenuStrip_FolderManaging.Name = "contextMenuStrip1";
-            contextMenuStrip_FolderManaging.Size = new Size(127, 48);
+            contextMenuStrip_FolderManaging.Size = new Size(181, 92);
             // 
             // toolStripMenuItem_AddFolder
             // 
             toolStripMenuItem_AddFolder.Name = "toolStripMenuItem_AddFolder";
-            toolStripMenuItem_AddFolder.Size = new Size(126, 22);
+            toolStripMenuItem_AddFolder.Size = new Size(180, 22);
             toolStripMenuItem_AddFolder.Text = "폴더 추가";
             toolStripMenuItem_AddFolder.Click += toolStripMenuItem_AddFolder_Click;
             // 
             // toolStripMenuItem_DeleteFolder
             // 
             toolStripMenuItem_DeleteFolder.Name = "toolStripMenuItem_DeleteFolder";
-            toolStripMenuItem_DeleteFolder.Size = new Size(126, 22);
+            toolStripMenuItem_DeleteFolder.Size = new Size(180, 22);
             toolStripMenuItem_DeleteFolder.Text = "폴더 삭제";
             toolStripMenuItem_DeleteFolder.Click += toolStripMenuItem_DeleteFolder_Click;
+            // 
+            // toolStripMenuItem_Rename
+            // 
+            toolStripMenuItem_Rename.Name = "toolStripMenuItem_Rename";
+            toolStripMenuItem_Rename.Size = new Size(180, 22);
+            toolStripMenuItem_Rename.Text = "이름 바꾸기";
+            toolStripMenuItem_Rename.Click += toolStripMenuItem_Rename_Click;
             // 
             // MainForm
             // 
@@ -102,5 +110,6 @@
         private ContextMenuStrip contextMenuStrip_FolderManaging;
         private ToolStripMenuItem toolStripMenuItem_AddFolder;
         private ToolStripMenuItem toolStripMenuItem_DeleteFolder;
+        private ToolStripMenuItem toolStripMenuItem_Rename;
     }
 }

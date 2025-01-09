@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace SharedPhotoAlbum
 {
     public partial class MainForm : Form
     {
+        private string drivePath = "C:";
         private string rootPath = "C:\\PhotoAlbum";
         private bool isRename = false;
 
@@ -26,7 +28,14 @@ namespace SharedPhotoAlbum
 
         public void Init()
         {
-            TreeNode RootNode = new TreeNode(rootPath);
+            DirectoryInfo RootDirecInfo = new DirectoryInfo(rootPath);
+            if(RootDirecInfo.Exists == false) 
+            {
+                Directory.CreateDirectory(rootPath);
+                RootDirecInfo.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
+            }
+
+            TreeNode RootNode = new TreeNode(RootDirecInfo.Name);
             this.treeView_Folder.Nodes.Add(RootNode);
             AddDirectoriesToTree(RootNode, rootPath);
 
@@ -70,7 +79,8 @@ namespace SharedPhotoAlbum
                 if (ClickedNode == null)
                 {
                     this.toolStripMenuItem_DeleteFolder.Enabled = false;
-                    this.toolStripMenuItem_AddFolder.Enabled = true;
+                    this.toolStripMenuItem_AddFolder.Enabled = false;
+                    this.toolStripMenuItem_Rename.Enabled = false;
 
                     this.treeView_Folder.SelectedNode = ClickedNode;
                     this.contextMenuStrip_FolderManaging.Show(this.treeView_Folder, e.Location);
@@ -79,6 +89,7 @@ namespace SharedPhotoAlbum
                 {
                     this.toolStripMenuItem_DeleteFolder.Enabled = true;
                     this.toolStripMenuItem_AddFolder.Enabled = true;
+                    this.toolStripMenuItem_Rename.Enabled = true;
 
                     this.treeView_Folder.SelectedNode = ClickedNode;
                     this.contextMenuStrip_FolderManaging.Show(this.treeView_Folder, e.Location);
@@ -110,26 +121,27 @@ namespace SharedPhotoAlbum
 
         private void treeView_Folder_AfterLabelEdit(object sender, NodeLabelEditEventArgs e)
         {
-            string OldPath = e.Node.FullPath;
+            e.Node.Tag = e.Node.Text;
+            string OldPath = Path.Combine(drivePath, e.Node.FullPath);
             this.BeginInvoke(new Action(() => AfterEdit(e.Node, OldPath)));
         }
 
         private void AfterEdit(TreeNode Node, string OldPath)
         {
-            bool IsDuplicated = Directory.Exists(Node.FullPath);
-
-            if (IsDuplicated == true)
-            {
-                MessageBox.Show("같은 이름의 폴더가 이미 존재합니다.", "중복 폴더 제한", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Node.Remove();
-
-                return;
-            }
+            bool IsDuplicated = Directory.Exists(Path.Combine(drivePath, Node.FullPath));
 
             if(isRename == false) 
             {
+                if (IsDuplicated == true)
+                {
+                    MessageBox.Show("같은 이름의 폴더가 이미 존재합니다.", "중복 폴더 제한", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Node.Remove();
+
+                    return;
+                }
+
                 // 실제 경로에 추가
-                string FolderPath = Node.FullPath;
+                string FolderPath = Path.Combine(drivePath, Node.FullPath);
 
                 if (!Directory.Exists(FolderPath))
                 {
@@ -138,9 +150,16 @@ namespace SharedPhotoAlbum
             }
             else
             {
-                // 실제 경로에 이름 변경                
+                if (IsDuplicated == true)
+                {
+                    MessageBox.Show("같은 이름의 폴더가 이미 존재합니다.", "중복 폴더 제한", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Node.Text = (string)Node.Tag;
+                    return;
+                }
+
+                // 실제 경로에 이름 변경
                 string OldFolderPath = OldPath;
-                string NewFolderPath = Node.FullPath;
+                string NewFolderPath = Path.Combine(drivePath, Node.FullPath);
 
                 if (Directory.Exists(OldFolderPath))
                 {
@@ -151,15 +170,21 @@ namespace SharedPhotoAlbum
 
         private void toolStripMenuItem_DeleteFolder_Click(object sender, EventArgs e)
         {
+            TreeNode SelectedNode = this.treeView_Folder.SelectedNode;
+
+            // 실제 경로에서 삭제
+            string FolderPath = Path.Combine(drivePath, SelectedNode.FullPath);
+
+            if (FolderPath == rootPath)
+            {
+                MessageBox.Show("최상위 폴더는 삭제할 수 없습니다", "권한 오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             DialogResult Result = MessageBox.Show("폴더를 삭제하시겠습니까?", "폴더 삭제", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
             if (Result == DialogResult.OK)
             {
-                TreeNode SelectedNode = this.treeView_Folder.SelectedNode;
-
-                // 실제 경로에서 삭제
-                string FolderPath = SelectedNode.FullPath;
-
                 if (Directory.Exists(FolderPath))
                 {
                     Directory.Delete(FolderPath, true);
@@ -181,6 +206,12 @@ namespace SharedPhotoAlbum
             isRename = true;
 
             TreeNode SelectedNode = this.treeView_Folder.SelectedNode;
+
+            if (Path.Combine(drivePath, SelectedNode.FullPath) == rootPath)
+            {
+                MessageBox.Show("최상위 폴더의 이름은 변경할 수 없습니다", "권한 오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             if (SelectedNode != null)
             {

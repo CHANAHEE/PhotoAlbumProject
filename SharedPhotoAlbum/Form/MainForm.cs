@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SharedPhotoAlbum
@@ -29,7 +30,7 @@ namespace SharedPhotoAlbum
         public void Init()
         {
             DirectoryInfo RootDirecInfo = new DirectoryInfo(rootPath);
-            if(RootDirecInfo.Exists == false) 
+            if (RootDirecInfo.Exists == false)
             {
                 Directory.CreateDirectory(rootPath);
                 RootDirecInfo.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
@@ -54,14 +55,6 @@ namespace SharedPhotoAlbum
                     ParentNode.Nodes.Add(DirectoryNode);
 
                     AddDirectoriesToTree(DirectoryNode, Directory);
-                }
-
-                string[] Files = Directory.GetFiles(RootPath);
-
-                foreach (string File in Files)
-                {
-                    TreeNode FileNode = new TreeNode(Path.GetFileName(File));
-                    ParentNode.Nodes.Add(FileNode);
                 }
             }
             catch (UnauthorizedAccessException ex)
@@ -130,7 +123,7 @@ namespace SharedPhotoAlbum
         {
             bool IsDuplicated = Directory.Exists(Path.Combine(drivePath, Node.FullPath));
 
-            if(isRename == false) 
+            if (isRename == false)
             {
                 if (IsDuplicated == true)
                 {
@@ -217,6 +210,52 @@ namespace SharedPhotoAlbum
             {
                 SelectedNode.BeginEdit();
             }
+        }
+
+        private void treeView_Folder_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            string SelectedPath = Path.Combine(drivePath, e.Node.FullPath); // 선택한 노드의 경로
+            ShowFiles(SelectedPath);
+        }
+
+        private void ShowFiles(string Path)
+        {
+            this.flowLayoutPanel_Image.Controls.Clear();  
+
+            string[] Directories = Directory.GetDirectories(Path);
+            string[] Images = Directory.GetFiles(Path);
+
+            foreach (var Directory in Directories)
+            {
+                ImageControl FolderIcon = new ImageControl();
+                FolderIcon.SetImage(Properties.Resources.Folder);
+                FolderIcon.SetSizeMode(PictureBoxSizeMode.StretchImage);
+                FolderIcon.Size = new Size(200, 200);
+                FolderIcon.Tag = Directory;  
+                FolderIcon.Click += (sender, e) => { ShowFiles(Directory); };
+                
+                this.flowLayoutPanel_Image.Controls.Add(FolderIcon);
+            }
+
+            foreach (var Image in Images)
+            {
+                if (IsImageFile(Image))  
+                {
+                    ImageControl ImageIcon = new ImageControl();                    
+                    ImageIcon.SetImage(System.Drawing.Image.FromFile(Image));
+                    ImageIcon.SetSizeMode(PictureBoxSizeMode.Zoom);
+                    ImageIcon.Size = new Size(200, 200);
+                    ImageIcon.Tag = Image;  
+
+                    this.flowLayoutPanel_Image.Controls.Add(ImageIcon);
+                }
+            }
+        }
+
+        private bool IsImageFile(string FilePath)
+        {
+            string[] ImageExtensions = { ".jpg", ".jpeg", ".png", ".gif", ".bmp" };
+            return ImageExtensions.Contains(Path.GetExtension(FilePath).ToLower());
         }
     }
 }

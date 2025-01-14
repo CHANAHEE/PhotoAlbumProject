@@ -35,8 +35,10 @@
             toolStripMenuItem_AddFolder = new ToolStripMenuItem();
             toolStripMenuItem_DeleteFolder = new ToolStripMenuItem();
             toolStripMenuItem_Rename = new ToolStripMenuItem();
+            flowLayoutPanel_Image = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
             contextMenuStrip_FolderManaging.SuspendLayout();
             SuspendLayout();
@@ -50,6 +52,10 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.Controls.Add(treeView_Folder);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(flowLayoutPanel_Image);
             splitContainer1.Size = new Size(1106, 665);
             splitContainer1.SplitterDistance = 228;
             splitContainer1.TabIndex = 0;
@@ -62,34 +68,43 @@
             treeView_Folder.Size = new Size(228, 665);
             treeView_Folder.TabIndex = 0;
             treeView_Folder.AfterLabelEdit += treeView_Folder_AfterLabelEdit;
+            treeView_Folder.AfterSelect += treeView_Folder_AfterSelect;
             treeView_Folder.MouseUp += treeView_Folder_MouseUp;
             // 
             // contextMenuStrip_FolderManaging
             // 
             contextMenuStrip_FolderManaging.Items.AddRange(new ToolStripItem[] { toolStripMenuItem_AddFolder, toolStripMenuItem_DeleteFolder, toolStripMenuItem_Rename });
             contextMenuStrip_FolderManaging.Name = "contextMenuStrip1";
-            contextMenuStrip_FolderManaging.Size = new Size(181, 92);
+            contextMenuStrip_FolderManaging.Size = new Size(139, 70);
             // 
             // toolStripMenuItem_AddFolder
             // 
             toolStripMenuItem_AddFolder.Name = "toolStripMenuItem_AddFolder";
-            toolStripMenuItem_AddFolder.Size = new Size(180, 22);
+            toolStripMenuItem_AddFolder.Size = new Size(138, 22);
             toolStripMenuItem_AddFolder.Text = "폴더 추가";
             toolStripMenuItem_AddFolder.Click += toolStripMenuItem_AddFolder_Click;
             // 
             // toolStripMenuItem_DeleteFolder
             // 
             toolStripMenuItem_DeleteFolder.Name = "toolStripMenuItem_DeleteFolder";
-            toolStripMenuItem_DeleteFolder.Size = new Size(180, 22);
+            toolStripMenuItem_DeleteFolder.Size = new Size(138, 22);
             toolStripMenuItem_DeleteFolder.Text = "폴더 삭제";
             toolStripMenuItem_DeleteFolder.Click += toolStripMenuItem_DeleteFolder_Click;
             // 
             // toolStripMenuItem_Rename
             // 
             toolStripMenuItem_Rename.Name = "toolStripMenuItem_Rename";
-            toolStripMenuItem_Rename.Size = new Size(180, 22);
+            toolStripMenuItem_Rename.Size = new Size(138, 22);
             toolStripMenuItem_Rename.Text = "이름 바꾸기";
             toolStripMenuItem_Rename.Click += toolStripMenuItem_Rename_Click;
+            // 
+            // flowLayoutPanel_Image
+            // 
+            flowLayoutPanel_Image.Dock = DockStyle.Fill;
+            flowLayoutPanel_Image.Location = new Point(0, 0);
+            flowLayoutPanel_Image.Name = "flowLayoutPanel_Image";
+            flowLayoutPanel_Image.Size = new Size(874, 665);
+            flowLayoutPanel_Image.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -97,6 +112,7 @@
             Controls.Add(splitContainer1);
             Name = "MainForm";
             splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
             contextMenuStrip_FolderManaging.ResumeLayout(false);
@@ -111,5 +127,6 @@
         private ToolStripMenuItem toolStripMenuItem_AddFolder;
         private ToolStripMenuItem toolStripMenuItem_DeleteFolder;
         private ToolStripMenuItem toolStripMenuItem_Rename;
+        private FlowLayoutPanel flowLayoutPanel_Image;
     }
 }

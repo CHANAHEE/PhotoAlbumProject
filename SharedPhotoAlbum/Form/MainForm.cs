@@ -220,7 +220,13 @@ namespace SharedPhotoAlbum
 
         private void ShowFiles(string Path)
         {
-            this.flowLayoutPanel_Image.Controls.Clear();  
+            this.flowLayoutPanel_Image.Controls.Clear();
+
+            if (Directory.Exists(Path) == false)
+            {
+                Console.WriteLine($"{Path} 에 폴더가 존재하지 않습니다.");
+                return;
+            }
 
             string[] Directories = Directory.GetDirectories(Path);
             string[] Images = Directory.GetFiles(Path);
@@ -231,9 +237,9 @@ namespace SharedPhotoAlbum
                 FolderIcon.SetImage(Properties.Resources.Folder);
                 FolderIcon.SetSizeMode(PictureBoxSizeMode.StretchImage);
                 FolderIcon.Size = new Size(200, 200);
-                FolderIcon.Tag = Directory;  
-                FolderIcon.Click += (sender, e) => { ShowFiles(Directory); };
-                
+                FolderIcon.Tag = Directory;
+                FolderIcon.SetItemName(Directory.Split("\\").Last());
+
                 this.flowLayoutPanel_Image.Controls.Add(FolderIcon);
             }
 
@@ -245,7 +251,8 @@ namespace SharedPhotoAlbum
                     ImageIcon.SetImage(System.Drawing.Image.FromFile(Image));
                     ImageIcon.SetSizeMode(PictureBoxSizeMode.Zoom);
                     ImageIcon.Size = new Size(200, 200);
-                    ImageIcon.Tag = Image;  
+                    ImageIcon.Tag = Image;
+                    ImageIcon.SetItemName(Image.Split("\\").Last());
 
                     this.flowLayoutPanel_Image.Controls.Add(ImageIcon);
                 }

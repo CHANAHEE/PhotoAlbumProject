@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kd/WgRVfxTDdkphxSoRMrv0UeYqPrPnSUxm1Sv7QlzfRjP1KUiUGdWa01Dan+sM8NheMaYCps+TWh3T968CiIQ==",
+  "dgSpecHash": "3BOyY65AkjY=",
   "success": true,
-  "projectFilePath": "D:\\Private\\SharedPhotoAlbum\\SharedPhotoAlbum\\AlbumServer\\AlbumServer.csproj",
+  "projectFilePath": "D:\\Project\\PhotoAlbum\\AlbumServer\\AlbumServer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

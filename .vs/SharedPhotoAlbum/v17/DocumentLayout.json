@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\PhotoAlbum\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|d:\\project\\photoalbum\\sharedphotoalbum\\form\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|solutionrelative:sharedphotoalbum\\form\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|d:\\project\\photoalbum\\sharedphotoalbum\\form\\imagecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|solutionrelative:sharedphotoalbum\\form\\imagecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|D:\\Project\\PhotoAlbum\\sharedphotoalbum\\form\\imagecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|solutionrelative:sharedphotoalbum\\form\\imagecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|d:\\project\\photoalbum\\sharedphotoalbum\\form\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|solutionrelative:sharedphotoalbum\\form\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|d:\\project\\photoalbum\\sharedphotoalbum\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|solutionrelative:sharedphotoalbum\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|D:\\Project\\PhotoAlbum\\sharedphotoalbum\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|solutionrelative:sharedphotoalbum\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|d:\\project\\photoalbum\\sharedphotoalbum\\sharedphotoalbum.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|solutionrelative:sharedphotoalbum\\sharedphotoalbum.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|D:\\Project\\PhotoAlbum\\sharedphotoalbum\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|solutionrelative:sharedphotoalbum\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|d:\\project\\photoalbum\\sharedphotoalbum\\form\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D96410F-628A-4401-8C40-96523E258FED}|SharedPhotoAlbum\\SharedPhotoAlbum.csproj|solutionrelative:sharedphotoalbum\\form\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\MainForm.cs",
+              "RelativeDocumentMoniker": "SharedPhotoAlbum\\Form\\MainForm.cs",
+              "ToolTip": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\MainForm.cs",
+              "RelativeToolTip": "SharedPhotoAlbum\\Form\\MainForm.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAnwOcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T10:05:56.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "SharedPhotoAlbum\\Properties\\Resources.resx",
+              "ToolTip": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Properties\\Resources.resx",
+              "RelativeToolTip": "SharedPhotoAlbum\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-01-31T10:05:55.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "SharedPhotoAlbum\\Properties\\Settings.settings",
+              "ToolTip": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Properties\\Settings.settings",
+              "RelativeToolTip": "SharedPhotoAlbum\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002768|",
+              "WhenOpened": "2025-01-31T10:05:55.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SharedPhotoAlbum",
+              "DocumentMoniker": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\SharedPhotoAlbum.csproj",
+              "RelativeDocumentMoniker": "SharedPhotoAlbum\\SharedPhotoAlbum.csproj",
+              "ToolTip": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\SharedPhotoAlbum.csproj",
+              "RelativeToolTip": "SharedPhotoAlbum\\SharedPhotoAlbum.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-31T10:05:55.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ImageControl.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\ImageControl.cs",
+              "RelativeDocumentMoniker": "SharedPhotoAlbum\\Form\\ImageControl.cs",
+              "ToolTip": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\ImageControl.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "SharedPhotoAlbum\\Form\\ImageControl.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T10:05:55.971Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImageControl.cs",
+              "DocumentMoniker": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\ImageControl.cs",
+              "RelativeDocumentMoniker": "SharedPhotoAlbum\\Form\\ImageControl.cs",
+              "ToolTip": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\ImageControl.cs",
+              "RelativeToolTip": "SharedPhotoAlbum\\Form\\ImageControl.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T10:05:55.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\MainForm.cs",
+              "RelativeDocumentMoniker": "SharedPhotoAlbum\\Form\\MainForm.cs",
+              "ToolTip": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\MainForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "SharedPhotoAlbum\\Form\\MainForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T10:05:56.454Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Program.cs",
+              "RelativeDocumentMoniker": "SharedPhotoAlbum\\Program.cs",
+              "ToolTip": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Program.cs",
+              "RelativeToolTip": "SharedPhotoAlbum\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T10:05:56.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "SharedPhotoAlbum\\Form\\MainForm.Designer.cs",
+              "ToolTip": "D:\\Project\\PhotoAlbum\\SharedPhotoAlbum\\Form\\MainForm.Designer.cs",
+              "RelativeToolTip": "SharedPhotoAlbum\\Form\\MainForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T10:05:56.468Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

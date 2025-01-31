@@ -31,7 +31,7 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             panel2 = new Panel();
-            label1 = new Label();
+            label_Name = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -63,22 +63,22 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(label1);
+            panel2.Controls.Add(label_Name);
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(10, 192);
             panel2.Name = "panel2";
             panel2.Size = new Size(235, 47);
             panel2.TabIndex = 1;
             // 
-            // label1
+            // label_Name
             // 
-            label1.Dock = DockStyle.Fill;
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(235, 47);
-            label1.TabIndex = 0;
-            label1.Text = "IMG_1061.PNG";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label_Name.Dock = DockStyle.Fill;
+            label_Name.Location = new Point(0, 0);
+            label_Name.Name = "label_Name";
+            label_Name.Size = new Size(235, 47);
+            label_Name.TabIndex = 0;
+            label_Name.Text = "IMG_1061.PNG";
+            label_Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ImageControl
             // 
@@ -98,6 +98,6 @@
         private PictureBox pictureBox1;
         private Panel panel1;
         private Panel panel2;
-        private Label label1;
+        private Label label_Name;
     }
 }

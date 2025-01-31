@@ -26,5 +26,10 @@ namespace SharedPhotoAlbum
         {
             this.pictureBox1.SizeMode = SizeMode;
         }
+
+        public void SetItemName(string Name)
+        {
+            this.label_Name.Text = Name;
+        }
     }
 }

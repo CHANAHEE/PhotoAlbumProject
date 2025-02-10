@@ -19,6 +19,7 @@ namespace SharedPhotoAlbum
     {
         private string drivePath = "C:";
         private string rootPath = "C:\\PhotoAlbum";
+        private string syncPath = "C:\\PhotoAlbum\\Sync";
         private bool isRename = false;
 
         public MainForm()
@@ -29,6 +30,7 @@ namespace SharedPhotoAlbum
 
         public void Init()
         {
+            //폴더 생성 및 트리뷰 초기화
             DirectoryInfo RootDirecInfo = new DirectoryInfo(rootPath);
             if (RootDirecInfo.Exists == false)
             {
@@ -36,11 +38,21 @@ namespace SharedPhotoAlbum
                 RootDirecInfo.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
             }
 
+            DirectoryInfo SyncDirecInfo = new DirectoryInfo(syncPath);
+            if (SyncDirecInfo.Exists == false)
+            {
+                Directory.CreateDirectory(syncPath);
+                SyncDirecInfo.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
+            }
+
             TreeNode RootNode = new TreeNode(RootDirecInfo.Name);
             this.treeView_Folder.Nodes.Add(RootNode);
             AddDirectoriesToTree(RootNode, rootPath);
 
             this.treeView_Folder.LabelEdit = true;
+
+            //폼 이름 변경
+            this.Text = "";
         }
 
         private void AddDirectoriesToTree(TreeNode ParentNode, string RootPath)
@@ -52,7 +64,14 @@ namespace SharedPhotoAlbum
                 foreach (string Directory in Directories)
                 {
                     TreeNode DirectoryNode = new TreeNode(Path.GetFileName(Directory));
-                    ParentNode.Nodes.Add(DirectoryNode);
+                    if(DirectoryNode.Text == syncPath.Split('\\').Last())
+                    {
+                        ParentNode.Nodes.Insert(0, DirectoryNode);
+                    }
+                    else
+                    {
+                        ParentNode.Nodes.Add(DirectoryNode);
+                    }                    
 
                     AddDirectoriesToTree(DirectoryNode, Directory);
                 }
@@ -233,6 +252,11 @@ namespace SharedPhotoAlbum
 
             foreach (var Directory in Directories)
             {
+                if(Directory == syncPath)
+                {
+                    continue;
+                }
+
                 ImageControl FolderIcon = new ImageControl();
                 FolderIcon.SetImage(Properties.Resources.Folder);
                 FolderIcon.SetSizeMode(PictureBoxSizeMode.StretchImage);

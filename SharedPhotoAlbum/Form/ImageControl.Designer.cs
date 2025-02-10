@@ -28,76 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
+            pictureBox_Image = new PictureBox();
+            panel_Image = new Panel();
             panel1 = new Panel();
-            panel2 = new Panel();
             label_Name = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Image).BeginInit();
+            panel_Image.SuspendLayout();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox_Image
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.Folder;
-            pictureBox1.Location = new Point(10, 10);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(235, 182);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pictureBox_Image.BackColor = Color.Transparent;
+            pictureBox_Image.Dock = DockStyle.Fill;
+            pictureBox_Image.Image = Properties.Resources.Folder;
+            pictureBox_Image.Location = new Point(50, 50);
+            pictureBox_Image.Name = "pictureBox_Image";
+            pictureBox_Image.Size = new Size(155, 116);
+            pictureBox_Image.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_Image.TabIndex = 0;
+            pictureBox_Image.TabStop = false;
+            pictureBox_Image.MouseEnter += pictureBox_Image_MouseEnter;
+            pictureBox_Image.MouseLeave += pictureBox_Image_MouseLeave;
+            // 
+            // panel_Image
+            // 
+            panel_Image.BackColor = Color.Transparent;
+            panel_Image.Controls.Add(pictureBox_Image);
+            panel_Image.Controls.Add(panel1);
+            panel_Image.Dock = DockStyle.Fill;
+            panel_Image.Location = new Point(0, 0);
+            panel_Image.Name = "panel_Image";
+            panel_Image.Padding = new Padding(50);
+            panel_Image.Size = new Size(255, 249);
+            panel_Image.TabIndex = 1;
+            panel_Image.MouseEnter += panel_Image_MouseEnter;
+            panel_Image.MouseLeave += panel_Image_MouseLeave;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Transparent;
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(panel2);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
+            panel1.Controls.Add(label_Name);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(50, 166);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(10);
-            panel1.Size = new Size(255, 249);
-            panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(label_Name);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(10, 192);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(235, 47);
-            panel2.TabIndex = 1;
+            panel1.Size = new Size(155, 33);
+            panel1.TabIndex = 2;
             // 
             // label_Name
             // 
             label_Name.Dock = DockStyle.Fill;
             label_Name.Location = new Point(0, 0);
             label_Name.Name = "label_Name";
-            label_Name.Size = new Size(235, 47);
-            label_Name.TabIndex = 0;
-            label_Name.Text = "IMG_1061.PNG";
+            label_Name.Size = new Size(155, 33);
+            label_Name.TabIndex = 1;
+            label_Name.Text = "label1";
             label_Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ImageControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel1);
+            Controls.Add(panel_Image);
             Name = "ImageControl";
             Size = new Size(255, 249);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Image).EndInit();
+            panel_Image.ResumeLayout(false);
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox_Image;
+        private Panel panel_Image;
         private Panel panel1;
-        private Panel panel2;
         private Label label_Name;
     }
 }

@@ -31,11 +31,11 @@
             components = new System.ComponentModel.Container();
             splitContainer1 = new SplitContainer();
             treeView_Folder = new TreeView();
+            flowLayoutPanel_Image = new FlowLayoutPanel();
             contextMenuStrip_FolderManaging = new ContextMenuStrip(components);
             toolStripMenuItem_AddFolder = new ToolStripMenuItem();
             toolStripMenuItem_DeleteFolder = new ToolStripMenuItem();
             toolStripMenuItem_Rename = new ToolStripMenuItem();
-            flowLayoutPanel_Image = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -63,6 +63,9 @@
             // treeView_Folder
             // 
             treeView_Folder.Dock = DockStyle.Fill;
+            treeView_Folder.Font = new Font("맑은 고딕", 11F);
+            treeView_Folder.Indent = 14;
+            treeView_Folder.ItemHeight = 25;
             treeView_Folder.Location = new Point(0, 0);
             treeView_Folder.Name = "treeView_Folder";
             treeView_Folder.Size = new Size(228, 665);
@@ -70,6 +73,14 @@
             treeView_Folder.AfterLabelEdit += treeView_Folder_AfterLabelEdit;
             treeView_Folder.AfterSelect += treeView_Folder_AfterSelect;
             treeView_Folder.MouseUp += treeView_Folder_MouseUp;
+            // 
+            // flowLayoutPanel_Image
+            // 
+            flowLayoutPanel_Image.Dock = DockStyle.Fill;
+            flowLayoutPanel_Image.Location = new Point(0, 0);
+            flowLayoutPanel_Image.Name = "flowLayoutPanel_Image";
+            flowLayoutPanel_Image.Size = new Size(874, 665);
+            flowLayoutPanel_Image.TabIndex = 0;
             // 
             // contextMenuStrip_FolderManaging
             // 
@@ -97,14 +108,6 @@
             toolStripMenuItem_Rename.Size = new Size(138, 22);
             toolStripMenuItem_Rename.Text = "이름 바꾸기";
             toolStripMenuItem_Rename.Click += toolStripMenuItem_Rename_Click;
-            // 
-            // flowLayoutPanel_Image
-            // 
-            flowLayoutPanel_Image.Dock = DockStyle.Fill;
-            flowLayoutPanel_Image.Location = new Point(0, 0);
-            flowLayoutPanel_Image.Name = "flowLayoutPanel_Image";
-            flowLayoutPanel_Image.Size = new Size(874, 665);
-            flowLayoutPanel_Image.TabIndex = 0;
             // 
             // MainForm
             // 

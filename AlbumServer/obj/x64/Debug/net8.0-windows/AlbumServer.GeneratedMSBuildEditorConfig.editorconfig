@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AlbumServer
-build_property.ProjectDir = D:\Project\PhotoAlbum\AlbumServer\
+build_property.ProjectDir = D:\Private\SharedPhotoAlbum\SharedPhotoAlbum\AlbumServer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
